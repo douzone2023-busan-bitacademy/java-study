@@ -3,14 +3,22 @@ package chapter03;
 public class Goods {
 	public static int countOfGoods = 0;
 	
-	private String name;
-	
+	private String name;	
 	private int price;
 	private int countStock;
 	private int countSold;
 	
 	public Goods() {
 		countOfGoods = countOfGoods + 1; 
+	}
+	
+	public Goods(String name, int price, int countStock, int countSold) {
+		this.name = name;
+		this.price = price;
+		this.countStock = countStock;
+		this.countSold = countSold;
+		
+		countOfGoods = countOfGoods + 1;
 	}
 	
 	public int calcDiscountPrice(float discountRate) {
