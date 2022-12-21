@@ -11,7 +11,7 @@ public class Main {
 		point.show(false);
 		point.show(true);
 		
-		// point.disapear();
+		// point.disappear();
 	}
 
 }
