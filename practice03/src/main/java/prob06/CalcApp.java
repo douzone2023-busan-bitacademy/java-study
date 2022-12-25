@@ -6,6 +6,7 @@ public class CalcApp {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+
 		while( true ) {
 			System.out.print( ">> " );
 			String expression = scanner.nextLine();
@@ -49,9 +50,9 @@ public class CalcApp {
 				continue;
 			}
 			
-			arith.setValue(lValue, rValue);
+			arith.setValue( lValue, rValue );
 			int result = arith.calculate();
-			System.out.println( ">> " + result);
+			System.out.println( ">> " + result );
 		}
 		
 		scanner.close();
