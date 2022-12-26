@@ -84,7 +84,7 @@ public class GenericTest {
 		// MyStack<? extends Shape> s1 = new MyStack<>(10);
 		// s1.push(new Rect());
 		
-		for(Shape s :in) {
+		for(Shape s : in) {
 			out.push(s);
 		}
 	}
