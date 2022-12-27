@@ -1,5 +1,6 @@
 package chapter04;
 
+import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -10,6 +11,15 @@ public class DateTest {
 		
 		printDate01(now);
 		printDate02(now);
+		
+		byte[] data = new byte[9];
+		try {
+			String s = new String(data, "utf-8");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 	private static void printDate01(Date d) {
