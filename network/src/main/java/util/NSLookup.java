@@ -5,7 +5,6 @@ import java.net.UnknownHostException;
 import java.util.Scanner;
 
 public class NSLookup {
-
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		while(true) {
