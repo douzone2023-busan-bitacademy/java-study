@@ -7,13 +7,12 @@ public class ChatClientApp {
 		String name = null;
 		Scanner scanner = new Scanner(System.in);
 
-		while( true ) {
-			
+		while(true) {
 			System.out.println("대화명을 입력하세요.");
 			System.out.print(">>> ");
 			name = scanner.nextLine();
 			
-			if (name.isEmpty() == false ) {
+			if (!name.isEmpty()) {
 				break;
 			}
 			
@@ -22,7 +21,14 @@ public class ChatClientApp {
 		
 		scanner.close();
 
-		new ChatWindow(name).show();
+		//1. create socket
+		//2. connect to server
+		//3. get iostream
+		//4. join protocol 진행
+		//     String line = br.readLine();
+		String line = "JOIN:OK";
+		if("JOIN:OK".equals(line)) {
+			new ChatWindow(name).show();
+		}
 	}
-
 }
